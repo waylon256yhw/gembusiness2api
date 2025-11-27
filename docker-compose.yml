@@ -1,0 +1,9 @@
+services:
+  geminibusiness:
+    build: .
+    container_name: geminibusiness
+    restart: unless-stopped
+    ports:
+      - "3003:8000"
+    env_file: .env
+ 
